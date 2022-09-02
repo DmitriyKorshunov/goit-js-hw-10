@@ -5,7 +5,7 @@ function countryCardTeemplate({ flags, name, capital, population, languages }) {
       <div class="country-info__wrapper">
         <img class="country-info__flags" src="${flags.svg}" alt="${
     name.official
-  }" width="50" />
+  }" width="70" />
         <h2 class="country-info__name">${name.official}</h2>
       </div>
       <p class="country-info__capital"><span class="country-info__weight">Capital:</span> ${capital}</p>
@@ -18,8 +18,8 @@ function countryCardTeemplate({ flags, name, capital, population, languages }) {
 }
 
 function countryListTempate({ flags, name }) {
-  return `<li class="country-list_item">
-  <img class="country-list_flags" src="${flags.svg}" alt="${name.official}" width="25">
+  return `<li class="country-list__item">
+  <img class="country-list__flags" src="${flags.svg}" alt="${name.official}" width="40">
   <h2 class="country-list__name">${name.official}</h2>
   </li>`;
 }
